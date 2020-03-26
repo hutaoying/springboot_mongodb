@@ -5,8 +5,20 @@ import java.util.concurrent.BlockingQueue;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("aa");
-        System.out.println( Thread.interrupted());
-        System.out.println("bb");
+        int a=0;
+        System.out.println(test());
+
+//        System.out.println( Thread.interrupted());
+//        System.out.println("bb");
+    }
+    public static int test(){
+        int a =0;
+        try {
+            System.out.println("aa");
+            return a=a+1;
+        }finally {
+            a=6;
+        }
+
     }
 }
